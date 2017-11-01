@@ -1,0 +1,15 @@
+// les Mixins
+
+@mixin border-radius($radius) {
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -o-border-radius: $radius;
+        border-radius: $radius;
+}
+
+@mixin border($border) {
+        -webkit-border: $border;
+        -moz-border: $border;
+        -o-border: $border;
+        border: $border;
+}

@@ -1,0 +1,22 @@
+<h2>Contact</h2>
+        <p>Vous avez un projet, besoin d'un conseil ou tout simplement une question à me poser? </p>
+
+<form class="" action="#" method="post">
+        <header>
+                <fieldset>
+                        <fieldset>
+                                <label for="name">Nom Prénom : </label><input type="text" name="name" placeholder="Entrez votre nom et prénom">
+                        </fieldset>
+                        <fieldset>
+                                <label for="mail">Mail : </label><input type="text" name="mail" placeholder="Entrez votre mail">
+                        </fieldset>
+                        <fieldset>
+                                <label for="content">Contenu : </label><textarea name="content" rows="8" cols="70" ></textarea>
+                        </fieldset>
+                        <div class="g-recaptcha" data-sitekey="6LduRzYUAAAAALBtvZEv0gBchEUL63QMN537jleW" data-theme='dark'></div>
+                        <button type="submit" name="sendMail" id="downCaptcha">Envoyer</button>
+                </fieldset>
+        </header>
+</form>
+
+<p> <?= $sErrorDisplay ?></p>

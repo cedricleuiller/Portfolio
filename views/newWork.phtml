@@ -1,0 +1,21 @@
+<h2>Ajout d'une realisation</h2>
+<form class="" action="#" method="post">
+        <fieldset>
+                <label for="screen">URL de l'image : </label><input type="text" name="screen" value="">
+        </fieldset>
+        <fieldset>
+                <label for="name">Nom du site : </label><input type="text" name="name" value="">
+        </fieldset>
+        <fieldset>
+                <label for="url">Url : </label><input type="text" name="url" value="">
+        </fieldset>
+        <fieldset>
+                <label for="content">Description du site : </label><textarea name="content" rows="5" cols="40"></textarea>
+        </fieldset>
+        <fieldset>
+                <label for="id_category">Catégorie : </label><select class="" name="id_category">
+                                <?php require 'controllers/categories.php'; ?>
+                </select>
+        </fieldset>
+        <button type="submit" name="addWork">Ajouter</button>
+</form>
