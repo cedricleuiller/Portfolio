@@ -1,11 +1,13 @@
 <?php
 
+require 'private/recaptchaKey.php';
+
 $oContactsManager = new ContactsManager($pdo);
-$captcha = new Recaptcha('6LduRzYUAAAAACt5WMC2Gd1ccaze5oPZEtCdFV_m');
+$captcha = new Recaptcha(KEYAPI);
 
 try {
         // Envoie du mail via le formulaire de contact
-        if (isset($_POST['name'], $_POST['mail'], $_POST['content'])) {
+        if (isset($_POST['name'], $_POST['mail'], $_POST['content'], $_POST['g-recaptcha-response'])) {
 
                 // Vérification des champs du formulaire
 
