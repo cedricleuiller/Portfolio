@@ -13,12 +13,12 @@ if (isset($_POST['admin'])) {
                 try {
 
                         $usersManager = new UsersManager($pdo);
-                        $user = $usersManager->findByUsername($_POST['username']);
+                        $user = $usersManager->findByUsername(htmlspecialchars($_POST['username']));
 
                         if (!$user) {
                                 throw new Exception("Utilisateur introuvable");
                         }
-                        if (!$user->verifPassword($_POST['password'])) {
+                        if (!$user->verifPassword(htmlspecialchars($_POST['password']))) {
                                 throw new Exception("Mot de passe incorrect");
                         }
 
