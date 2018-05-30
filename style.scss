@@ -1,4 +1,5 @@
 // Les imports
+
 @import "mixins.scss";
 @import "variable.scss";
 @import "fontFace.scss";
@@ -10,11 +11,13 @@
         &:hover {
                 transition: all .2s ease 0s;
         }
+
 }
 
 html {
         font-size: 62.5%;
         width: 100%;
+
         //mobile first
         body {
                 margin: 0 5px;
@@ -25,24 +28,32 @@ html {
                 background-image: url("../img/background.jpg");
                 background-size: auto;
                 color: $DarkGray;
-
+                // height: 100vh;
+//
                 h1, h2, h3 {
                         color: $doré;
                         text-shadow: 0px 0px 10px $doré;
                         font-family: "aflfont";
                         vertical-align: middle;
                 }
-
+//
                 a {
                         color: white;
                         text-decoration: none;
                 }
-
+//
                 header{
+                        // display: flex;
+                        // left: 1vh;
+                        // flex-direction: column;
+                        // z-index: 1;
+
                         .light{
                                 font-family: "BaroqueScript";
                                 display: flex;
                                 flex-direction: column;
+                                // justify-content: space-around;
+                                // height: 100%;
 
                                 a {
                                         margin: 10px 0;
@@ -52,51 +63,61 @@ html {
                                         text-shadow: 0px 0px 25px $doré;
                                 }
                         }
+//
                 }
-
+//
                 .hide {
                         display: none;
                 }
 
                 main {
                         background-size: cover;
-
+                        // color: $DarkGray;
+//                         width: 100%;
+//                         height: 100%;
+//
                         .welcome {
                                 font-size: 25px;
                         }
-
+//
                         #welcome {
                                 padding-top: 15%;
                                 color: $doré;
                                 text-shadow: 0px 0px 25px $doré;
                         }
-
+//
                         .small {
                                 height: 50px;
                                 width: 100px;
                                 box-shadow: 2px 2px 12px $doré;
                         }
-
+//
                         fieldset {
                                 @include border(none);
                         }
-
-                        // label {
-                        //         display: block;
-                        // }
-
+//
                         h2 {
                                 font-family: "BaroqueScript";
                         }
-
+//
                         ul{
                                 list-style: none;
                                 padding: 0;
                         }
-
+//
+//                         .g-recaptcha {
+//                                 // position: absolute;
+//                                 // left: 50%;
+//                         }
+// //
+//                         #downCaptcha {
+//                                 margin-top: 100px;
+//                         }
+//
                         .skullsBackground{
                                 background-color: #111111;
-
+                                // width: 50%;
+                                // margin: 0 auto;
                                 border: 2px outset black;
                                 margin-top: 5px;
 
@@ -110,22 +131,27 @@ html {
                                 }
 
                                 #html {
+                                        // width: 95%;
                                         background-color: black;
                                 }
 
                                 #css {
+                                        // width: 90%;
                                         background-color: black;
                                 }
 
                                 #php {
+                                        // width: 60%;
                                         background-color: black;
                                 }
 
                                 #javascript {
+                                        // width: 60%;
                                         background-color: black;
                                 }
 
                                 #mysql {
+                                        // width: 50%;
                                         background-color: black;
                                 }
 
@@ -133,15 +159,15 @@ html {
                                         display: flex;
                                         flex-direction: row-reverse;
                                 }
+
+
+
+
+
                         }
-                }
 
-                .captcha {
-                        display: flex;
-                        justify-content: center;
-                        padding: 15px;
                 }
-
+//
                 #skip, #likeSkip {
                         position: fixed;
                         right: 20px;
@@ -151,16 +177,27 @@ html {
                         background-color: black;
                         color: white;
                         text-transform: uppercase;
-                }
 
+                }
+//
+                // #likeSkip {
+                //         background-color: black;
+                //         border: none;
+                //         text-transform: uppercase;
+                // }
+//
                 footer {
+                        // position: absolute;
+                        // bottom: 0px;
+                        // left: 0px;
+                        right: 0px;
 
                         #mailSend{
                                 position: relative;
                                 top : -200px;
                                 text-shadow: 0px 0px 25px $doré;
                         }
-
+//
                         #social{
 
                                 li{
@@ -171,31 +208,6 @@ html {
                                         height: 30px;
                                 }
                         }
-                }
-
-                @media screen and (min-width: 700px) {
-
-                        header {
-                                padding: 15px;
-
-                                .light a{
-                                        display: contents;
-                                        margin-bottom: 20px;
-                                }
-                        }
-
-                        main {
-
-                                ul {
-                                        padding: 0 15%;
-                                }
-                        }
-
-                }
-
-                @media screen and (min-width: 1024px){
-
-                        
                 }
         }
 }

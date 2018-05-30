@@ -1,1 +1,118 @@
-@font-face{font-family:"aflfont";src:url("../fonts/aflfont.ttf") format("truetype")}@font-face{font-family:"BaroqueScript";src:url("../fonts/BaroqueScript.ttf") format("truetype")}*{-webkit-box-sizing:border-box;box-sizing:border-box}:hover{-webkit-transition:all .2s ease 0s;-o-transition:all .2s ease 0s;transition:all .2s ease 0s}html{font-size:62.5%;width:100%}html body{margin:0 auto;padding:0;font-size:1.7rem;line-height:1.4;text-align:center;background-image:url("../img/background.jpg");background-size:auto;color:#A9A9A9;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:100vh}html body h1,html body h2,html body h3{color:#FFD700;text-shadow:0px 0px 10px #FFD700;font-family:"aflfont";vertical-align:middle}html body a{color:white;text-decoration:none}html body header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;left:1vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;z-index:1}html body header .light{font-family:"BaroqueScript";display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;height:100%}html body header .light a:hover{text-shadow:0px 0px 25px #FFD700}html body .hide{display:none}html body main{background-size:cover;color:#A9A9A9;width:100%;height:100%}html body main .welcome{font-size:25px}html body main #welcome{padding-top:15%;color:#FFD700;text-shadow:0px 0px 25px #FFD700}html body main .small{height:50px;width:100px;-webkit-box-shadow:2px 2px 12px #FFD700;box-shadow:2px 2px 12px #FFD700}html body main fieldset{-webkit-border:none;-moz-border:none;-o-border:none;border:none}html body main h2{font-family:"BaroqueScript"}html body main ul{list-style:none}html body main .g-recaptcha{position:absolute;left:50%}html body main #downCaptcha{margin-top:100px}html body main .skullsBackground{background-color:#111111;width:50%;margin:0 auto;border:2px outset black;margin-top:5px}html body main .skullsBackground p{margin:0;color:#FFD700;text-shadow:0px 0px 25px #FFD700;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}html body main .skullsBackground #html{width:95%;background-color:black}html body main .skullsBackground #css{width:90%;background-color:black}html body main .skullsBackground #php{width:60%;background-color:black}html body main .skullsBackground #javascript{width:60%;background-color:black}html body main .skullsBackground #mysql{width:50%;background-color:black}html body main .skullsBackground .rightSide{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}html body #logOut,html body #skip{position:absolute;right:20px;bottom:20px;border:solid white 0.5px;padding:10px;background-color:black;font-family:Arial}html body #likeSkip{background-color:black;color:white;border:none;text-transform:uppercase}html body footer{position:absolute;bottom:0px;left:0px;right:0px}html body footer #mailSend{position:relative;top:-200px;text-shadow:0px 0px 25px #FFD700}html body footer #social li{display:inline-block}html body footer #social img{width:30px;height:30px}
+@font-face {
+  font-family: "aflfont";
+  src: url("../fonts/aflfont.ttf") format("truetype"); }
+@font-face {
+  font-family: "BaroqueScript";
+  src: url("../fonts/BaroqueScript.ttf") format("truetype"); }
+* {
+  box-sizing: border-box; }
+  *:hover {
+    transition: all .2s ease 0s; }
+
+html {
+  font-size: 62.5%;
+  width: 100%; }
+  html body {
+    margin: 0 5px;
+    padding: 0;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    text-align: center;
+    background-image: url("../img/background.jpg");
+    background-size: auto;
+    color: #A9A9A9; }
+    html body h1, html body h2, html body h3 {
+      color: #FFD700;
+      text-shadow: 0px 0px 10px #FFD700;
+      font-family: "aflfont";
+      vertical-align: middle; }
+    html body a {
+      color: white;
+      text-decoration: none; }
+    html body header .light {
+      font-family: "BaroqueScript";
+      display: flex;
+      flex-direction: column; }
+      html body header .light a {
+        margin: 10px 0; }
+      html body header .light a:hover {
+        text-shadow: 0px 0px 25px #FFD700; }
+    html body .hide {
+      display: none; }
+    html body main {
+      background-size: cover; }
+      html body main .welcome {
+        font-size: 25px; }
+      html body main #welcome {
+        padding-top: 15%;
+        color: #FFD700;
+        text-shadow: 0px 0px 25px #FFD700; }
+      html body main .small {
+        height: 50px;
+        width: 100px;
+        box-shadow: 2px 2px 12px #FFD700; }
+      html body main fieldset {
+        -webkit-border: none;
+        -moz-border: none;
+        -o-border: none;
+        border: none; }
+      html body main h2 {
+        font-family: "BaroqueScript"; }
+      html body main ul {
+        list-style: none;
+        padding: 0; }
+      html body main .skullsBackground {
+        background-color: #111111;
+        border: 2px outset black;
+        margin-top: 5px; }
+        html body main .skullsBackground p {
+          margin: 0;
+          color: #FFD700;
+          text-shadow: 0px 0px 25px #FFD700;
+          display: flex;
+          justify-content: space-between; }
+        html body main .skullsBackground #html {
+          background-color: black; }
+        html body main .skullsBackground #css {
+          background-color: black; }
+        html body main .skullsBackground #php {
+          background-color: black; }
+        html body main .skullsBackground #javascript {
+          background-color: black; }
+        html body main .skullsBackground #mysql {
+          background-color: black; }
+        html body main .skullsBackground .rightSide {
+          display: flex;
+          flex-direction: row-reverse; }
+    html body .captcha {
+      display: flex;
+      justify-content: center;
+      padding: 15px; }
+    html body #skip, html body #likeSkip {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      border: solid white 0.5px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      text-transform: uppercase; }
+    html body footer #mailSend {
+      position: relative;
+      top: -200px;
+      text-shadow: 0px 0px 25px #FFD700; }
+    html body footer #social li {
+      display: inline-block; }
+    html body footer #social img {
+      width: 30px;
+      height: 30px; }
+    @media screen and (min-width: 700px) {
+      html body header {
+        padding: 15px; }
+        html body header .light a {
+          display: contents;
+          margin-bottom: 20px; }
+      html body main ul {
+        padding: 0 15%; } }
+
+/*# sourceMappingURL=style.css.map */

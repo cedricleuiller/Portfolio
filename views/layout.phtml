@@ -14,16 +14,16 @@
         <header class="header">
                 <?php
                 require 'controllers/header.php';
+                require 'controllers/mailSend.php';
                 ?>
-        </header>
-        <main id="container">
+        </header><!--
+         --><main id="container">
                 <?php
                 require 'controllers/'.$sPage.'.php';
                  ?>
         </main>
         <footer>
                 <?php
-                require 'controllers/mailSend.php';
                 require 'controllers/footer.php';
                 ?>
         </footer>

@@ -4,7 +4,7 @@
 // Déclaration des variables pour le script de chargement de page.
 // Texte à insérer dans les <h1>.
 var firstText = "Bienvenue sur le Portfolio de Cédric Leuiller";
-var secondText = "Intégrateur Développeur Web";
+var secondText = "Développeur Web Junior";
 var thirdText = "Bonne visite !";
 // Les différents <p> à sélectionner
 var firstLine = "firstLine";
