@@ -13,14 +13,17 @@ html {
   font-size: 62.5%;
   width: 100%; }
   html body {
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
     font-size: 1.7rem;
     line-height: 1.4;
     text-align: center;
     background-image: url("../img/background.jpg");
     background-size: auto;
-    color: #A9A9A9; }
+    color: #A9A9A9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; }
     html body h1, html body h2, html body h3 {
       color: #FFD700;
       text-shadow: 0px 0px 10px #FFD700;
@@ -39,8 +42,13 @@ html {
         text-shadow: 0px 0px 25px #FFD700; }
     html body .hide {
       display: none; }
+    html body #cookieAlert {
+      background-color: #FFD700;
+      padding: 1px 0;
+      color: black; }
     html body main {
-      background-size: cover; }
+      background-size: cover;
+      flex: 1; }
       html body main .welcome {
         font-size: 25px; }
       html body main #welcome {
@@ -56,6 +64,8 @@ html {
         -moz-border: none;
         -o-border: none;
         border: none; }
+      html body main img {
+        width: 250px; }
       html body main h2 {
         font-family: "BaroqueScript"; }
       html body main ul {

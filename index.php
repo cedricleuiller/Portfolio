@@ -35,7 +35,7 @@ if (isset($_SESSION['admin'])) {
 
 // initialisation du cookie pour le script d'arrivée sur le site.
 if (!isset($_COOKIE['firstConnexion']) && !isset($_GET['admin'])) {
-        setcookie('firstConnexion', "welcome", time() +3600, null, null, false, true);
+        setcookie('firstConnexion', "welcome", time() +900, null, null, false, true);
         require 'views/welcome.phtml';
 } else {
 
@@ -49,8 +49,8 @@ if (!isset($_COOKIE['firstConnexion']) && !isset($_GET['admin'])) {
         $sPage = "home";
 
         // On définit les pages selon les accès de session
-        $access = ["competences", "works", "contact", "admin"];
-        $accessAdmin = ["competences", "works", "contact", "admin", "newWork", "mailList", "logout"];
+        $access = ["competences", "works", "contact", "admin", "legalInformations", "welcome"];
+        $accessAdmin = ["competences", "works", "contact", "admin", "legalInformations", "welcome", "newWork", "mailList", "logout"];
 
         if(isset($_GET['page'])){
                 if(isset($_SESSION['admin']) && $_SESSION['admin'] == 1 && in_array($_GET['page'], $accessAdmin)){

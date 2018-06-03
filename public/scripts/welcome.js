@@ -19,10 +19,14 @@ function welcomeVisitor(word, line){
         },100)
 }
 
+function cookieRedirect(){
+        document.location.href='index.php?page=legalInformations';
+}
+
 //Fonction à éxécuter lorsque la page est chargée.
 $(document).ready(function welcome(){
         welcomeVisitor(firstText, firstLine);
         window.setTimeout(function(){welcomeVisitor(secondText, secondLine);}, 5000, true);
         window.setTimeout(function(){welcomeVisitor(thirdText, thirdLine);}, 8000, true);
-        window.setTimeout(function(){window.location.href='../'}, 11000);
+        window.setTimeout(function(){document.location.href='../'}, 11000);
 })
